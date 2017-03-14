@@ -1,0 +1,12 @@
+[
+  {
+    "name":"PartRich Mail",
+    "addr":"../images/partrich/partRichMail.png?personal=1",
+    "description":"Email"
+  },
+  {
+    "name":"PartRich WIFI",
+    "addr":"../images/partrich/partRich_WiFi_ZZ_GRP.jpg?id=1",
+    "description":"WIFI"
+  }
+]
