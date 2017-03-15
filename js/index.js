@@ -1,15 +1,14 @@
 $(function () {
-    getAllResources();
-});
-function getAllResources(o){
+
     $.getJSON("../json/images.json?id=1",function(data){
+
         var tableObj = $(".gridtable");
         var tableHead = '    <tr> '+
             ' <th>名称</th><th>描述</th>'+
             '<th>操作</th>'+
             '</tr>';
         var body = "";
-        $(data).each(
+        $(data.data).each(
             function(index,obj){
                 tableObj.text("");
                 body += '<tr>'+
@@ -19,32 +18,61 @@ function getAllResources(o){
                     '<td >'+
                     obj.description   +
                     '</td>'+
-                    '<td><a  href="#openModal" onclick="javaScript:modalEvent(this)" attr="'+
+                    '<td><a  id="ddd" href="#openModal" onclick="javaScript:modalEvent(this)" attr="'+
                     obj.addr +
                     '" >进入</a>'+
                     '</td>'+
                     '</tr>' ;
-
             }
         );
         tableObj.append(tableHead+body);
     })
+
+    userMessage();
+
+
+});
+
+
+function userMessage() {
+
+    var user = {
+        "name":null,
+        "secret":null
+    };
+
+    $.ajaxSettings.async = false;
+    $.getJSON("../json/user.json?id=2",function(data){
+        user.name = data["name"];
+        user.secret=data["secret"];
+        localStorage.setItem("user",JSON.stringify(user));
+        }
+        );
 }
 
 function modalEvent(obj) {
+
     var href = $(obj).attr("attr");
 
     if(href.indexOf('?') != -1){
         var add = href.substr(href.indexOf('?')+1,href.length);
         if( add.indexOf("personal=")>=0 ){
+
             var params =prompt("请输入密码","")
-            if( params == '1234567' ){
-                // location.href = href;
+
+            var user = JSON.parse(localStorage.getItem("user"));
+
+            if(user == null){
+                userMessage();
+                user = JSON.parse(localStorage.getItem("user"));
+            }
+
+            var pass = hex_sha1(params+user.name);
+            if( pass == user.secret ){
                 //打开新窗口
                 window.open(href);
-            }else{
-                return
             }
+            return
         }
     }
     location.href = href;

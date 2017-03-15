@@ -1,17 +1,23 @@
-[
-  {
-    "name":"PartRich Mail",
-    "addr":"../images/partrich/partRichMail.png?personal=1",
-    "description":"Email"
-  },
-  {
-    "name":"PartRich WIFI",
-    "addr":"../images/partrich/partRich_WiFi_ZZ_GRP.jpg?id=1",
-    "description":"WIFI"
-  },
-  {
-    "name":"applicationContext",
-    "addr":"../doc/applicationContext.xml?id=1",
-    "description":"applicationContext配置文件<span>（测试）</span>"
-  }
-]
+{
+  "data":[
+    {
+      "name":"PartRich Mail",
+      "addr":"../images/partrich/partRichMail.png?personal=1",
+      "description":"Email"
+    },
+    {
+      "name":"PartRich WIFI",
+      "addr":"../images/partrich/partRich_WiFi_ZZ_GRP.jpg?id=1",
+      "description":"WIFI"
+    },
+    {
+      "name":"applicationContext",
+      "addr":"../doc/applicationContext.xml?id=1",
+      "description":"applicationContext配置文件<span>（测试）</span>"
+    }
+  ],
+    "user":{
+      "name":"https://github.com",
+       "secret":"bf2ab7eef49639d8d387334cf39329902eac8454"
+    }
+}
