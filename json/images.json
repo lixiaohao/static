@@ -8,5 +8,10 @@
     "name":"PartRich WIFI",
     "addr":"../images/partrich/partRich_WiFi_ZZ_GRP.jpg?id=1",
     "description":"WIFI"
+  },
+  {
+    "name":"applicationContext",
+    "addr":"../doc/applicationContext.xml?id=1",
+    "description":"applicationContext配置文件<span>（测试）</span>"
   }
 ]

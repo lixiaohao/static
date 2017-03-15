@@ -1,35 +1,33 @@
 $(function () {
     getAllResources();
 });
-
-function getAllResources(){
-
+function getAllResources(o){
     $.getJSON("../json/images.json?id=1",function(data){
         var tableObj = $(".gridtable");
-         var tableHead = '    <tr> '+
-         ' <th>名称</th><th>描述</th>'+
-         '<th>操作</th>'+
-         '</tr>';
-         var body = "";
-         $(data).each(
-         function(index,obj){
-         tableObj.text("");
-         body += '<tr>'+
-         '<td >' +
-         obj.name             +
-         '</td>'+
-         '<td >'+
-         obj.description   +
-         '</td>'+
-         '<td><a  href="#openModal" onclick="javaScript:modalEvent(this)" attr="'+
-         obj.addr +
-         '" >进入</a>'+
-         '</td>'+
-         '</tr>' ;
+        var tableHead = '    <tr> '+
+            ' <th>名称</th><th>描述</th>'+
+            '<th>操作</th>'+
+            '</tr>';
+        var body = "";
+        $(data).each(
+            function(index,obj){
+                tableObj.text("");
+                body += '<tr>'+
+                    '<td >' +
+                    obj.name             +
+                    '</td>'+
+                    '<td >'+
+                    obj.description   +
+                    '</td>'+
+                    '<td><a  href="#openModal" onclick="javaScript:modalEvent(this)" attr="'+
+                    obj.addr +
+                    '" >进入</a>'+
+                    '</td>'+
+                    '</tr>' ;
 
-         }
-         );
-         tableObj.append(tableHead+body);
+            }
+        );
+        tableObj.append(tableHead+body);
     })
 }
 
@@ -49,6 +47,5 @@ function modalEvent(obj) {
     }
 
     location.href = href;
-
 
 }
