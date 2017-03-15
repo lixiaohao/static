@@ -39,13 +39,14 @@ function modalEvent(obj) {
         if( add.indexOf("personal=")>=0 ){
             var params =prompt("请输入密码","")
             if( params == '1234567' ){
-                location.href = href;
+                // location.href = href;
+                //打开新窗口
+                window.open(href);
             }else{
                 return
             }
         }
     }
-
     location.href = href;
 
 }
