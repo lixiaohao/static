@@ -1,5 +1,4 @@
 $(function () {
-
     $.getJSON("../json/images.json?id=1",function(data){
 
         var tableObj = $(".gridtable");
@@ -67,8 +66,9 @@ function modalEvent(obj) {
                 user = JSON.parse(localStorage.getItem("user"));
             }
 
-            var pass = hex_sha1(params+user.name);
-            if( pass == user.secret ){
+            var SHA256 =  new Hashes.SHA256;
+            // var pass = hex_sha1(params+user.name);
+            if( SHA256.hex(params+user.name) === user.secret ){
                 //打开新窗口
                 window.open(href);
             }
