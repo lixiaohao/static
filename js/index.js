@@ -1,5 +1,5 @@
 $(function () {
-    $.getJSON("../json/images.json?id=1",function(data){
+    $.getJSON("json/images.json?id=1",function(data){
 
         var tableObj = $(".gridtable");
         var tableHead = '    <tr> '+
@@ -41,7 +41,7 @@ function userMessage() {
     };
 
     $.ajaxSettings.async = false;
-    $.getJSON("../json/user.json?id=2",function(data){
+    $.getJSON("json/user.json?id=2",function(data){
         user.name = data["name"];
         user.secret=data["secret"];
         localStorage.setItem("user",JSON.stringify(user));
