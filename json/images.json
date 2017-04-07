@@ -11,6 +11,21 @@
       "description":"WIFI"
     },
     {
+      "name":"searchPostMan",
+      "addr":"images/postman/searchPostMan.png?id=1",
+      "description":"WIFI"
+    },
+    {
+      "name":"openPostMan",
+      "addr":"images/postman/openPostMan.png?id=1",
+      "description":"WIFI"
+    },
+    {
+      "name":"postfile",
+      "addr":"images/postman/postfile.png?id=1",
+      "description":"WIFI"
+    },
+    {
       "name":"applicationContext",
       "addr":"doc/applicationContext.xml?id=1",
       "description":"applicationContext配置文件<span>（测试）</span>"
