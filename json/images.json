@@ -26,9 +26,9 @@
       "description":"WIFI"
     },
     {
-      "name":"applicationContext",
-      "addr":"doc/applicationContext.xml?id=1",
-      "description":"applicationContext配置文件<span>（测试）</span>"
+      "name":"howTomcatWorks",
+      "addr":"images/books/How Tomcat Works 中文版.pdf?id=1",
+      "description":"How Tomcat Works 中文版.pdf"
     }
   ]
 }
