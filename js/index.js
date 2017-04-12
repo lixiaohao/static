@@ -1,4 +1,18 @@
 $(function () {
+    var expiration = 2*60*1000;
+    var _upt = new Date().getTime()+expiration;
+    console.log(_upt);
+    imagesMess(_upt);
+
+    userMessage(_upt);
+
+
+});
+
+
+
+function imagesMess(_upt) {
+
     $.getJSON("json/images.json?id=1",function(data){
 
         var tableObj = $(".gridtable");
@@ -26,14 +40,14 @@ $(function () {
         );
         tableObj.append(tableHead+body);
     })
+}
 
-    userMessage();
+function userMessage(_upt) {
 
-
-});
-
-
-function userMessage() {
+    if( _upt <= new Date().getTime() ){
+        alert("过期了！");
+        return;
+    }
 
     var user = {
         "name":null,
