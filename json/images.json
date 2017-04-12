@@ -29,6 +29,26 @@
       "name":"howTomcatWorks",
       "addr":"doc/books/How Tomcat Works 中文版.pdf?id=1",
       "description":"How Tomcat Works 中文版.pdf"
+    },
+    {
+      "name":"2-Pearson - 算法(第四版).2013",
+      "addr":"doc/books/2-Pearson - 算法(第四版).2013.pdf?id=1",
+      "description":"How Tomcat Works 中文版.pdf"
+    },
+    {
+      "name":"6-人民邮电 - 程序员的职业素养.Robert.C.Martin.2012",
+      "addr":"doc/books/6-人民邮电 - 程序员的职业素养.Robert.C.Martin.2012.pdf?id=1",
+      "description":"6-人民邮电 - 程序员的职业素养.Robert.C.Martin.2012.pdf"
+    },
+    {
+      "name":"HTML5游戏开发",
+      "addr":"doc/books/HTML5游戏开发.pdf?id=1",
+      "description":"HTML5游戏开发.pdf"
+    },
+    {
+      "name":"TOMCAT权威指南",
+      "addr":"doc/books/TOMCAT权威指南.pdf?id=1",
+      "description":"TOMCAT权威指南.pdf"
     }
   ]
 }
