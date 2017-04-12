@@ -3,31 +3,31 @@
     {
       "name":"PartRich Mail",
       "addr":"images/partrich/partRichMail.png?personal=1",
-      "description":"Email"
+      "description":"PartRich Mail"
     },
     {
       "name":"PartRich WIFI",
       "addr":"images/partrich/partRich_WiFi_ZZ_GRP.jpg?id=1",
-      "description":"WIFI"
+      "description":"PartRich WIFI"
     },
     {
       "name":"searchPostMan",
       "addr":"images/postman/searchPostMan.png?id=1",
-      "description":"WIFI"
+      "description":"search for PostMan"
     },
     {
       "name":"openPostMan",
       "addr":"images/postman/openPostMan.png?id=1",
-      "description":"WIFI"
+      "description":"openPostMan"
     },
     {
       "name":"postfile",
       "addr":"images/postman/postfile.png?id=1",
-      "description":"WIFI"
+      "description":"postfile"
     },
     {
       "name":"howTomcatWorks",
-      "addr":"images/books/How Tomcat Works 中文版.pdf?id=1",
+      "addr":"doc/books/How Tomcat Works 中文版.pdf?id=1",
       "description":"How Tomcat Works 中文版.pdf"
     }
   ]
