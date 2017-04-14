@@ -49,6 +49,11 @@
       "name":"TOMCAT权威指南",
       "addr":"doc/books/TOMCAT权威指南.pdf?id=1",
       "description":"TOMCAT权威指南.pdf"
+    },
+    {
+      "name":"巴氏系数计算公式",
+      "addr":"images/note-icon/PAP calculation.png?id=1",
+      "description":"巴氏系数计算公式（计算直方图中离散点的相似度）"
     }
   ]
 }
